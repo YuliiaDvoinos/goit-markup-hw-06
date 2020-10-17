@@ -84,7 +84,7 @@
       <!-- ===========section our qualities =============-->
       <section class="qualities-section">
         <div class="container">
-          <h2 hidden class="section-title">our qualities</h2>
+          <h2  class="visually-hidden section-title">Наши преимущества</h2>
           <ul class="list qualities-list">
             <li class="list-item antenna">
               <h3 class="caption">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -496,14 +496,34 @@
           </button>
           <form action="#" method="GET" class="modal-form">
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <label for="user-name" class="form-label">Имя</label>
-            <input type="text" name="user-name" id="user-name" class="form-input">
-            <label for="user-phone" class="form-label">Телефон</label>
-            <input type="tel" name="user-phone" id="user-phone" class="form-input">
-            <label for="user-mail" class="form-label">Почта</label>
-            <input type="email" name="user-mail" id="user-mail" class="form-input">
+
+            <label  class="form-label">Имя
+            <input type="text" name="user-name"  class="form-input">
+            <svg class="modal-svg" width="12px" height="12px">
+              <use href="./images/svg/optimized.svg#user-name"></use>
+            </svg>
+            </label>
+
+            <label  class="form-label">Телефон
+            <input type="tel" name="user-phone"  class="form-input">
+            <svg class="modal-svg" width="12px" height="12px">
+              <use href="./images/svg/optimized.svg#user-phone"></use>
+            </svg>
+            </label>
+
+            <label  class="form-label">Почта
+            <input type="email" name="user-mail"  class="form-input">
+            <svg class="modal-svg" width="12px" height="12px">
+              <use href="./images/svg/optimized.svg#user-mail"></use>
+            </svg>
+            </label>
+
             <label for="user-message" class="form-label">Комментарий</label>
             <textarea name="user-message" id="user-message" class="comment" placeholder="Введите текст"></textarea>
+
+            <input type="checkbox" name="user-policy" id="user-policy" value="accept-policy" class="visually-hidden checkbox-policy">
+            <label for="user-policy" class="label-policy">Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="policy-link">Условия договора</a></label>
+
             <div class="button-container">
               <button type="submit" class="form-btn-submit">Отправить</button>
             </div>
